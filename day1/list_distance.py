@@ -29,7 +29,7 @@ def process_lines(lines:list):
 
 
 def main():
-    lines = read_file("./lists.txt")
+    lines = read_file("lists.txt")
     l1,l2 = process_lines(lines)
     l1.sort()
     l2.sort()

@@ -40,7 +40,7 @@ def similarity_score(l1:list,l2:list):
 
 
 def main():
-    lines = read_file("./lists.txt")
+    lines = read_file("lists.txt")
     l1,l2 = process_lines(lines)
     score = similarity_score(l1,l2)
     print(score)
