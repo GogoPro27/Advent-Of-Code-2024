@@ -1,7 +1,5 @@
-def read_file(file_path):
-    with open(file_path, "r") as file:
-        lines = file.readlines()
-    return lines
+from read import read_file
+
 
 def process_line(line:str):
     num1,num2 = "",""
