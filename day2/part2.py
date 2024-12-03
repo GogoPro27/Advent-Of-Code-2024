@@ -1,8 +1,4 @@
-def read_file(file_path):
-    with open(file_path, "r") as file:
-        lines = file.readlines()
-    return lines
-
+from read import read_file
 
 def process_lines(lines: list[str]):
     big_list = []
@@ -13,8 +9,6 @@ def process_lines(lines: list[str]):
         big_list.append(numbers_list)
         assert len(numbers_list)>=2
     return big_list
-
-
 def is_increasing(l):
     return all(l[i] < l[i+1] and 1 <= abs(l[i] - l[i+1]) <= 3 for i in range(len(l)-1))
 
